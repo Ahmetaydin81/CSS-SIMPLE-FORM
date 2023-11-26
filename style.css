@@ -1,0 +1,150 @@
+body{
+    height:100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-image: url(PENUP.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom left;
+   
+}
+.section{
+    width: 50%;
+    /* border: 2px solid skyblue; */
+    padding: 40px 0px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(50px);
+    
+
+    
+.form{
+    width: 45%;
+    /* border: 2px solid steelblue; */
+    padding: 25px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+}
+.header{
+    text-align: center;
+    margin: 5px 0px;
+}
+.header h3{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    animation: color 5s infinite alternate;
+    font-size: x-large;
+}
+.form .text{
+    width: 100%;
+    text-align: center;
+
+}
+.form .text input{
+    height: 25px;
+    width: 100%;
+    margin: 10px 0px;
+    border-left:none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid  rgb(255, 255, 255);
+    text-transform: uppercase;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+}
+
+.form .text input::placeholder{
+    font-weight: 700;
+    color: white;
+}
+.form .text input:focus{
+    outline: none;
+    border-bottom: 3.5px solid red;
+    color: white;
+}
+
+
+.form .password{
+    width: 100%;
+    text-align: center;
+
+}
+.form .password input {
+    height: 25px;
+    width: 100%;
+    margin: 10px 0px;
+    border-left:none;
+    border-right: none;
+    border-top: none;
+    text-transform: uppercase;
+    border-bottom: 1px solid  rgb(255, 255, 255);
+    text-transform: uppercase;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+}
+.form .password input:focus{
+    outline: none;
+    border-bottom: 3.5px solid steelblue;
+    color: white;
+    
+}
+.form .password input::placeholder{
+    font-weight: 700;
+    color: rgb(255, 255, 255)
+}
+.form .button button{
+    cursor: pointer;
+    width: 120px;
+    height: 35px;
+    background-color: steelblue;
+    color: white;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+    margin: 30px 0px;
+}
+.form .button button:hover{
+    transform: scale(1.1);
+    color: rgba(204, 204, 204, 0.899);
+}
+.form .button button:active{
+    box-shadow: 0px 0px 15px 1px skyblue;
+}
+@keyframes color{
+    0%{
+        color: red;
+        
+    }
+    50%{
+        color: steelblue;
+    }
+    100%{
+        color: white;
+    }
+}
+@media screen and (max-width:950px) {
+    .section{
+        width: 90%;
+        
+    }
+   
+    .form .text input::placeholder{
+        font-weight: 200;
+        text-transform: capitalize;
+    }
+    .form .password input::placeholder{
+        font-weight: 200;
+        text-transform: capitalize;
+    }
+}
